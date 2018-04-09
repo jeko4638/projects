@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="./lib/p5.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js" type="text/javascript"></script>
+    <script src="./lib/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+   <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+</style>
+	 <link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
+</head>
+<body>
+   <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+   <label for="drawer-toggle" id="drawer-toggle-label"></label>
+   <header>
+      <img id=logo src="assets/intakelogo.svg">
+   </header>
+   <nav id="drawer">
+      <ul>
+         <li id="surveytitle">BEAUTIFUL DESIGN</li>
+         <li id="questionnumber"><strong>Q1</strong></li>
+         <p id= "question">What makes design beautiful to you?</p>
+         <p id= "answerfield"><input id ="answer" value=""></input><button id="submit">→</button></p>
+         <li id="value">Value <p id=inputValue >32</p></li>
+         <li id="value2">Color <p id=colorValue >#ffffff</p> </li>
+      </ul>
+   </nav>
+   <div id="page-content">
+      <p></p>
+   </div>
+</body>
+</html>
